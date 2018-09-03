@@ -1,0 +1,124 @@
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+.info_container {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .text_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .text {
+            @include text(28px, $color-secondary);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        hr {
+            width: 150px;
+            border-color: $color-primary;
+            margin-bottom: 40px;
+        }
+    }
+
+    .image_cont {
+        width: 100%;
+
+        hr {
+            width: 50%;
+            border: 0.5px solid $color-secondary;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.cost_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .const_title {
+        @include text(38px, $color-secondary);
+    }
+
+    table {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    td {
+        padding: 10px 40px;
+        text-align: center;
+    }
+
+    .type {
+        background-color: $color-primary;
+        @include text(19px, $color-lightest);
+        padding: 0;
+    }
+
+    .title {
+        text-transform: uppercase;
+        @include text(17px, $color-secondary);
+    }
+
+    .cost {
+        @include text(15px, $color-secondary);
+        font-weight: bold;
+    }
+
+    .name {
+        @include text(17px, $color-primary);
+        font-weight: bold;
+    }
+}
+
+.owl-item img {
+    width: 280px;
+    height: 370px;
+}
+
+.owl-dot span {
+    border-radius: 100%;
+    border: 5px solid $color-darkest;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.owl-dot .active span {
+    border-radius: 100%;
+    border: 5px solid $color-darkest;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.top {
+    box-shadow: 0px -10px 25px -15px $color-secondary;
+}
+
+.bottom {
+    box-shadow: 0px 20px 35px -15px $color-secondary;
+}
+
+.left {
+    box-shadow: -15px 0px 10px -15px $color-secondary;
+}
+
+.right {
+    box-shadow: 15px 0px 10px -15px $color-secondary;
+}
+
+.social_icon {
+    .iconFooter:hover {
+        border-bottom: 1px solid $color-darkest;
+    }
+}

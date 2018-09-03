@@ -1,5 +1,21 @@
+/* ########## PARTIALS ########## */
+
 @import 'scss/partials/reset';
 @import 'scss/partials/variables';
-@import 'scss/mixins';
-@import 'scss/button';
-@import 'scss/layout';
+@import 'scss/partials/breakpoints';
+@import 'scss/partials/buttons';
+@import 'scss/partials/text';
+/* ########## PAGES ########## */
+
+@import 'scss/pages/header_main';
+@import 'scss/pages/prime_main';
+@import 'scss/pages/header_timetable';
+@import 'scss/pages/prime_timetable';
+/* ########## LAYOUT ########## */
+
+@import 'scss/layout/footer';
+@import 'scss/layout/responsive_main';
+@import 'scss/layout/responsive_timetable';
+body {
+    font-family: 'Chivo', sans-serif;
+}

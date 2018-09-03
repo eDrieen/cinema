@@ -1,0 +1,98 @@
+.main_container {
+    background: url("bg.png") no-repeat center top;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0, 0 -10px $color-primary outset, 0 0, 0 0;
+
+    .menu_cont {
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+
+        .menu_element {
+            background-color: rgba(223, 20, 20, 0.3);
+            width: 100%;
+            height: 70%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .img {
+                width: 200px;
+                margin-left: 100px;
+            }
+
+            .menu {
+                margin-right: 170px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    margin-right: 15px;
+                    @include text(18px,
+                    $color-darker);
+                }
+
+                .active {
+                    color: $white2_color;
+                }
+
+                a:last-child {
+                    margin-right: 0px;
+                }
+
+                .icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .title_cont {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+            @include text(40px,
+            $color-darker);
+            width: 80%;
+            margin-top: 15px;
+        }
+
+        .text_large {
+            @include text;
+            width: 80%;
+        }
+    }
+
+    .btn_cont {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            @include button(155px,
+            55px,
+            15px,
+            5px,
+            $color-primary,
+            $color-lightest,
+            none);
+            margin-top: 60px;
+        }
+    }
+
+    .image_cont_category .owl-carousel {
+        position: absolute;
+        top: -50px;
+    }
+}

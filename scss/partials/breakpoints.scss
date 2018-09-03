@@ -1,0 +1,14 @@
+$mobilePortrait: 767px;
+$mobileLandscape-min: 320px;
+$mobileLandscape-max: 767px;
+$tabletPortrait-min: 768px;
+$tabletPortrait-max: 1024px;
+$tabletLandscape-min: 768px;
+$tabletLandscape-max: 1024px;
+$screen: "only screen" !default;
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+$mobile-portrait: "#{$portrait} and (max-width: #{$mobilePortrait})" !default;
+$mobile-landscape: "#{$landscape} and (min-width: #{$mobileLandscape-min}) and (max-width: #{$mobileLandscape-max})" !default;
+$tablet-portrait: "#{$portrait} and (min-width: #{$tabletPortrait-min}) and (max-width: #{$tabletPortrait-max})" !default;
+$tablet-landscape: "#{$landscape} and (min-width: #{$tabletLandscape-min}) and (max-width: #{$tabletLandscape-max})" !default;

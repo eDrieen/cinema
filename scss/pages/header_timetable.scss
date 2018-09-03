@@ -1,0 +1,191 @@
+.timetable_box {
+    width: 100%;
+    height: 82vh;
+
+    .timetable_container {
+        background: url("bg.png") no-repeat center top;
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0, 0 -10px $color-primary outset, 0 0, 0 0;
+
+        .menu_cont {
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+
+            .menu_element {
+                background-color: rgba(223, 20, 20, 0.3);
+                width: 100%;
+                height: 70%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .img {
+                    width: 200px;
+                    margin-left: 100px;
+                }
+
+                .menu {
+                    margin-right: 170px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        margin-right: 15px;
+                        @include text(18px,
+                        $color-darker);
+                    }
+
+                    .active {
+                        color: $white2_color;
+                    }
+
+                    a:last-child {
+                        margin-right: 0px;
+                    }
+
+                    .icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .title_cont {
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+
+            .text_large {
+                @include text;
+                width: 100%;
+                margin-top: 85px;
+            }
+        }
+
+        .image-categories {
+            height: 45vh;
+            display: flex;
+            justify-content: center;
+
+            .owl-carousel {
+                width: 50%;
+            }
+
+            .owl-carousel>div {
+                width: 100%;
+                margin: auto;
+                margin-top: 7vh;
+                left: 0;
+                right: 0;
+            }
+
+            .owl-carousel div img {
+                width: 100%;
+                height: 45vh;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .navsy {
+                width: 100%;
+            }
+
+            .owl-carousel .owl-prev img {
+                background: #e7e7e8;
+                border-radius: 50%;
+                position: absolute;
+                top: 260px;
+                left: 10px;
+                opacity: 0.7;
+                width: 23px;
+                height: 23px;
+                padding: 7px;
+                cursor: pointer;
+            }
+
+            .owl-carousel .owl-next img {
+                background: #e7e7e8;
+                border-radius: 50%;
+                position: absolute;
+                top: 260px;
+                right: 10px;
+                opacity: 0.7;
+                width: 23px;
+                height: 23px;
+                padding: 7px;
+                cursor: pointer;
+            }
+
+            .owl-carousel div .textoverlay {
+                height: 7vh;
+                background-color: rgba(97, 97, 97, 0.7);
+                width: 100%;
+                margin: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                @include text(12px,
+                $color-light);
+                display: flex;
+                flex-direction: row;
+            }
+
+            .info_box_text {
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .info_box_text__title {
+                flex: 1;
+                @include text(22px,
+                $color-light);
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+            }
+
+            .info_box_text__info {
+                flex: 1;
+                @include text(17px,
+                $color-darker);
+                margin-left: 15px;
+            }
+
+            .info_box_btn {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .info_btn {
+                width: 80px;
+                height: 30px;
+                display: inline-block;
+                border-radius: 5px;
+                background: #AD0000;
+                font-size: 13px;
+                color: #e0e0e0;
+                border: none;
+            }
+        }
+
+        .image_cont_category .owl-carousel {
+            position: absolute;
+            top: -50px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.info_timetable_container {
+    margin-top: 55px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .text {
+        @include text(5vh, $dark_color);
+        margin: 15px 0 30px 100px;
+        text-align: left;
+    }
+
+    .image_cont {
+        width: 100%;
+
+        hr {
+            width: 50%;
+            border: 0.5px solid $dark_color;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.elements_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .movie_element:last-child {
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    .movie_element {
+        width: 70%;
+        height: 220px;
+        display: flex;
+        border-bottom: 1px solid black;
+
+        .movie_element__info_container {
+            flex: 1.1;
+            display: flex;
+
+            .info_container__image {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .info_img {
+                    width: 140px;
+                    height: 200px;
+                }
+            }
+
+            .info_container__text {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .info_container__el_title {
+                    color: $color-secondary;
+                    font-size: 23px;
+                    margin-left: 6px;
+                    font-weight: bold;
+                }
+
+                .info_container__el_text {
+                    font-size: 16px;
+                    color: $color-darkest;
+                    margin: 12px 0 0 6px;
+                }
+            }
+        }
+
+        .movie_element__box_container {
+            flex: 1;
+            height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            align-self: center;
+
+            .box_container__box {
+                margin-right: 15px;
+                width: 80px;
+                height: 70px;
+                border: 2px solid $color-secondary;
+                background-color: $color-lightest;
+                border-radius: 7px;
+                overflow: hidden;
+
+                .box_title {
+                    height: 25px;
+                    background-color: rgba(84, 84, 84, 0.6);
+                    font-size: 18px;
+                    color: $color-light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .box_hour {
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    font-size: 18px;
+                    color: $color-secondary;
+                    font-weight: bold;
+                }
+
+                .box_day {
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
