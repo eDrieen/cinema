@@ -1,0 +1,40 @@
+/*** Parameters ***/
+
+// Colors
+$color-primary: #AD0000;
+$color-secondary: #333333;
+$color-light: #e0e0e0;
+$color-lightest: #efefef;
+$color-darker: #bdbdbd;
+$color-darkest: #545454;
+$color-brand: #239bf6;
+// Brand color
+$color-facebook: #3b5998;
+$color-feedly: #2bb24c;
+$color-github: #333;
+$color-google: #dc4e41;
+$color-instagram: #3f729b;
+$color-linkedin: #0077b5;
+$color-medium: #00ab6b;
+$color-messenger: #0084ff;
+$color-rss: #f26522;
+$color-spotify: #2ebd59;
+$color-twitter: #55acee;
+// Additional color
+$color-menu: rgba(223, 20, 20, 0.3);
+$color-info: rgba(97, 97, 97, 0.7);
+// Shadow
+$shadow-top: 0px -10px 25px -15px $color-secondary;
+$shadow-bottom: 0px 20px 35px -15px $color-secondary;
+$shadow-left: -15px 0px 10px -15px $color-secondary;
+$shadow-right: 15px 0px 10px -15px $color-secondary;
+// Font Size
+$font-size-biggest: 2.8rem;
+$font-size-largest: 2.3rem;
+$font-size-large: 1.6rem;
+$font-size-base: 1rem;
+$font-size-small: .9rem;
+$font-size-smallest: .75rem;
+// Font Family
+$font-Lato: 'Lato',
+sans-serif;

@@ -1,0 +1,15 @@
+@mixin button($backgroundColor, $fontFamily, $fontColor, $fontSize, $fontWeight, $borderType, $borderColor, $borderSize, $borderRadius, $verticalPadding, $horizontalPadding) {
+    background-color: $backgroundColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+    font-weight: $fontWeight;
+    border: $borderSize $borderType $borderColor;
+    border-radius: $borderRadius;
+    padding: $horizontalPadding $verticalPadding;
+}
+
+@mixin buttonHover($backgroundColorHover, $fontColorHover) {
+    background-color: $backgroundColorHover;
+    color: $fontColorHover;
+}
