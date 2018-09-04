@@ -51,7 +51,7 @@
                     @include text(2.2em);
                     width: 100%;
                     text-align: center;
-                    margin-top: 60px;
+                    margin-top: 40px;
                 }
             }
 
@@ -108,7 +108,7 @@
                 }
 
                 .owl-carousel div .textoverlay {
-                    height: 7vh;
+                    height: 9vh;
                     background-color: rgba(97, 97, 97, 0.7);
                     width: 100%;
                     margin: auto;
@@ -184,23 +184,11 @@
                         }
 
                         .active {
-                            color: $color-lightest;
+                            color: $white2_color;
                         }
 
                         a:last-child {
-                            margin-right: 20px;
-                        }
-
-                        a:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
-                            display: none;
-                        }
-
-                        .icon {
-                            display: block;
-                            float: right;
-                            position: absolute;
-                            right: 10px;
-                            font-size: 20px;
+                            margin-right: -20px;
                         }
                     }
                 }
@@ -217,8 +205,8 @@
         flex-direction: column;
 
         .text {
-            @include text(4.5vh, $color-secondary);
-            margin: 0 0 0 0;
+            @include text(3.8vh, $color-secondary);
+            margin: 0 0 15px 0;
             text-align: center;
         }
     }
@@ -505,28 +493,16 @@
                         a {
                             text-decoration: none;
                             margin-right: 10px;
-                            @include text(15px, $color-darker);
+                            @include text(14px, $color-darker);
                             line-height: 25px;
                         }
 
                         .active {
-                            color: $color-lightest;
+                            color: $white2_color;
                         }
 
                         a:last-child {
                             margin-right: 20px;
-                        }
-
-                        a:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
-                            display: block;
-                        }
-
-                        .icon {
-                            display: none;
-                            float: right;
-                            position: absolute;
-                            right: 10px;
-                            font-size: 20px;
                         }
                     }
                 }
@@ -817,7 +793,7 @@
             .menu_cont {
                 .menu_element {
                     .img {
-                        margin-left: 20px;
+                        margin-left: 50px;
                         width: 150px;
                     }
 
@@ -832,23 +808,7 @@
                         }
 
                         .active {
-                            color: $color-lightest;
-                        }
-
-                        a:last-child {
-                            margin-right: 20px;
-                        }
-
-                        a:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
-                            display: block;
-                        }
-
-                        .icon {
-                            display: none;
-                            float: right;
-                            position: absolute;
-                            right: 10px;
-                            font-size: 20px;
+                            color: $white2_color;
                         }
                     }
                 }
@@ -1139,8 +1099,9 @@
             .menu_cont {
                 .menu_element {
                     .img {
-                        margin-left: 20px;
-                        width: 15%;
+                        margin-left: 50px;
+                        width: 140px;
+                        height: 30px;
                     }
 
                     .menu {
@@ -1149,28 +1110,16 @@
                         a {
                             text-decoration: none;
                             margin-right: 10px;
-                            @include text(15px, $color-darker);
+                            @include text(14px, $color-darker);
                             line-height: 25px;
                         }
 
                         .active {
-                            color: $color-lightest;
+                            color: $white2_color;
                         }
 
                         a:last-child {
-                            margin-right: 20px;
-                        }
-
-                        a:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
-                            display: block;
-                        }
-
-                        .icon {
-                            display: none;
-                            float: right;
-                            position: absolute;
-                            right: 10px;
-                            font-size: 20px;
+                            margin-right: 40px;
                         }
                     }
                 }
@@ -1295,6 +1244,45 @@
             @include text(6.6vh, $color-secondary);
             margin-top: 65px;
             text-align: center;
+        }
+    }
+}
+
+@media #{$custom-breakpoint} {
+    .timetable_box {
+        .timetable_container {
+            .menu_cont {
+                .menu_element {
+                    .img {
+                        margin-left: 20px;
+                        width: 130px;
+                        height: 25px;
+                    }
+
+                    .menu {
+                        margin-right: 50px;
+
+                        a:not(:nth-child(2)):not(:nth-child(4)) {
+                            display: none;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            margin-right: 10px;
+                            @include text(14px, $color-darker);
+                            line-height: 25px;
+                        }
+
+                        .active {
+                            color: $white2_color;
+                        }
+
+                        a:last-child {
+                            margin-right: -20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
